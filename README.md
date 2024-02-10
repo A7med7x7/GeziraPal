@@ -1,2 +1,2 @@
 # Tesnor-Flow-SC-Fertilizer-and-Crop-Recommendation-Recomm
-This Repository contain the files of a deep learning project that help people by recommending the type of crops to cultivate
+is a GitHub repository containing files related to a deep learning project aimed at assisting individuals in crop cultivation. The project utilizes TensorFlow, a popular machine learning framework, to develop a recommendation system for suggesting suitable crops to cultivate based on various factors.
