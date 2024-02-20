@@ -28,3 +28,46 @@ Sci-kit learn: Utilize this library for machine learning algorithms and addition
 TensorFlow: Employ TensorFlow for machine learning model development and deployment.
 TensorFlow.keras: Specifically used for loading models created with Keras.
 Streamlit: Utilized for streamlining the web application development process.
+
+
+### About the Data
+
+#### Source
+The dataset was originally obtained from Kaggle: [Crop and Fertilizer Dataset for Western Maharashtra](https://www.kaggle.com/datasets/sanchitagholap/crop-and-fertilizer-dataset-for-westernmaharashtra).
+
+#### Overview
+- The dataset is generated and contains 11 features with more than 4k instances.
+- After analysis and data generation, it now has over 12k instances.
+- The target variable is the crop type.
+- In this repository, you will have access to the cleaned version of the dataset.
+  1. `crop_and_fertilizer.csv`: The full dataset.
+  2. `x_train_resampled.csv`: The training variables.
+  3. `y_train_resampled.csv`: Target variable.
+
+### Notebook Contents
+
+The notebook consists of:
+
+1. Data reading and cleaning.
+2. Data preprocessing.
+3. Modeling.
+4. Evaluation and systemizing functions.
+
+### String Value Input Function
+
+In order to enable users to input string values instead of labeled numbers to represent their information, a function is built using transformers (scaler and encoder).
+
+### Prediction Functions in the App
+
+The app contains 3 prediction functions:
+
+1. **Basic Recommendation Function**:
+   - It's a filtering method that uses only Pandas as a tool without any prediction capabilities or modeling.
+   - It returns the available crops to grow from the database that match your inputs.
+
+2. **Advanced Recommendation Function**:
+   - Using TensorFlow, we build a multi-class classification Keras model that is able to recommend the best crop.
+
+3. **Corresponding YouTube Tutorial Function**:
+   - This function returns the predicted label, converts it, and then searches in the corresponding YouTube tutorial from the 'link' column to suggest what to watch.
+
