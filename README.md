@@ -20,7 +20,7 @@ from sklearn import *
 import tensorflow as tf
 import tensorflow.keras as keras
 import streamlit as st
-
+```
 ### Usage Details
 NumPy & Pandas: Use these libraries for numerical computations and data manipulation within your code.
 Joblib: Use it as an alternative for loading transformers, encoders, and scalers saved during preprocessing or model training.
