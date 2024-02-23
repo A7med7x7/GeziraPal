@@ -21,6 +21,31 @@ import tensorflow as tf
 import tensorflow.keras as keras
 import streamlit as st
 ```
+
+### To use GeziraPal, follow these steps:
+
+1/ Clone the repository to your local machine using the following command:
+
+git clone https://github.com/your-username/Tesnor-Flow-SC-Fertilizer-and-Crop-Recommendation-Recomm.git
+
+2/ Install the necessary dependencies listed in the requirements.txt file using:
+
+pip install -r requirements.txt
+
+3/ Run the Streamlit web application by executing:
+
+streamlit run app.py
+
+4/ Access the web interface by opening a browser and navigating to the provided URL.
+
+5/ Choose between the Basic Recommender and AI Recommender options based on your preference.
+
+6/ Input the relevant parameters such as district, soil color, nutrient levels, and weather conditions.
+
+7/ Click the "Predict" button to receive crop recommendations.
+
+8/ Optionally, explore the provided YouTube tutorial recommendations for further learning.
+
 ### Usage Details
 NumPy & Pandas: Use these libraries for numerical computations and data manipulation within your code.
 Joblib: Use it as an alternative for loading transformers, encoders, and scalers saved during preprocessing or model training.
