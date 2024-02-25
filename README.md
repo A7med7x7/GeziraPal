@@ -59,15 +59,18 @@ Streamlit: Utilized for streamlining the web application development process.
 
 #### Source
 The dataset was originally obtained from Kaggle: [Crop and Fertilizer Dataset for Western Maharashtra](https://www.kaggle.com/datasets/sanchitagholap/crop-and-fertilizer-dataset-for-westernmaharashtra).
+under the name 'Crop and fertilizer dataset.csv' in the data directory
 
 #### Overview
 - The dataset is generated and contains 11 features with more than 4k instances.
 - After analysis and data generation, it now has over 12k instances.
 - The target variable is the crop type.
 - In this repository, you will have access to the cleaned version of the dataset.
-  1. `crop_and_fertilizer.csv`: The full dataset.
-  2. `x_train_resampled.csv`: The training variables.
-  3. `y_train_resampled.csv`: Target variable.
+  1. `Crop and fertilizer dataset.csv`: the raw dataset
+  2. `crop_and_fertilizer.csv`: The full dataset.
+  3. `x_train_resampled.csv`: The training variables.
+  4. `y_train_resampled.csv`: Target variable.
+
 
 ### Notebook Contents
 
