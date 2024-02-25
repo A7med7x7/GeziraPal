@@ -12,7 +12,7 @@ encoder = LabelEncoder()
 
 
 st.image("croper/Images/pal-01.png",width=100)
-st.title('GeziraPal Crop :blue[Recommender]', ':sunglasses:') 
+st.title('GeziraPal Crop Recommender) 
 st.header('About us')
 
 st.markdown('''
