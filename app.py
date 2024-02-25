@@ -13,7 +13,7 @@ encoder = LabelEncoder()
 with open("/Users/ahmed/Desktop/Python /html & css/style.css", "r") as file:
     css = file.read()
 
-st.image("/Users/ahmed/Desktop/Python /Images/pal-01.png",width=100)
+st.image("croper/Images",width=100)
 st.title('GeziraPal Crop :blue[Recommender]', ':sunglasses:') 
 st.header('About us', divider='rainbow')
 
