@@ -25,7 +25,6 @@ st.markdown('''
 
 
 st.write("This app predicts possible crops based on district, fertilizer, and soil.")
-st.divider()
 st.header('basic recommender')
 
 
@@ -55,7 +54,6 @@ if st.button("Predict Possible Crops (Basic Recommender)"):
     crop = predict_possible_crops(district_basic, fertilizer_basic, soil_basic)
     st.success(f'Recommended Crop: {crop}')
 st.header('AI recommender')
-st.divider()
 
 district = st.selectbox('Select your district', district_options)
 soil_color = st.selectbox('Select soil color', soil_color_options)
