@@ -8,9 +8,9 @@ GeziraPal is a project that aimed at assisting individuals with knowledge sharin
 
 #### Loading and Installing Dependencies
 
-Before running the application, ensure you have installed the necessary dependencies. You can find all the required dependencies along with their corresponding versions in the `requirements.txt` file.
+Before running the application, ensure you have installed the necessary dependencies. You can find all the required dependencies along with their corresponding versions in the `requirements.txt` file. 
 
-```bash
+```bash 
 pip install -r requirements.txt
 import numpy as np
 import pandas as pd
