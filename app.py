@@ -13,7 +13,7 @@ encoder = LabelEncoder()
 
 st.image("croper/Images/pal-01.png",width=100)
 st.title('GeziraPal Crop :blue[Recommender]', ':sunglasses:') 
-st.header('About us', divider='rainbow')
+st.header('About us')
 
 st.markdown('''
     :orange[Welcome to our innovative tool portal, showcasing a 
@@ -25,7 +25,6 @@ st.markdown('''
 
 
 st.write("This app predicts possible crops based on district, fertilizer, and soil.")
-
 st.divider()
 st.header('basic recommender')
 
