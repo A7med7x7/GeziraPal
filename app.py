@@ -13,7 +13,7 @@ encoder = LabelEncoder()
 with open("/Users/ahmed/Desktop/Python /html & css/style.css", "r") as file:
     css = file.read()
 
-st.image("croper/Images",width=100)
+st.image("croper/Images/pal-01.png",width=100)
 st.title('GeziraPal Crop :blue[Recommender]', ':sunglasses:') 
 st.header('About us', divider='rainbow')
 
@@ -32,7 +32,7 @@ st.divider()
 st.header('basic recommender')
 
 
-dataset=pd.read_csv('/Users/ahmed/Desktop/Python /my_data/crop_and_fertilizer.csv')
+dataset=pd.read_csv('croper/my_data/crop_and_fertilizer.csv')
 
 
 def predict_possible_crops(district, fertilizer, soil):
