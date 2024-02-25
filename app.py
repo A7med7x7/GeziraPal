@@ -10,8 +10,6 @@ model =tf.keras.models.load_model('croper/my_model.h5')
 scaler = StandardScaler()
 encoder = LabelEncoder()
 
-with open("/Users/ahmed/Desktop/Python /html & css/style.css", "r") as file:
-    css = file.read()
 
 st.image("croper/Images/pal-01.png",width=100)
 st.title('GeziraPal Crop :blue[Recommender]', ':sunglasses:') 
