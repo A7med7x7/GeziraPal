@@ -5,7 +5,7 @@ import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import pickle
 
-model =tf.keras.models.load_model('croper/my_model (1).h5')
+model =tf.keras.models.load_model('croper/my_model.h5')
 
 scaler = StandardScaler()
 encoder = LabelEncoder()
