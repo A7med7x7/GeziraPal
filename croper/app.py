@@ -5,13 +5,10 @@ import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import pickle
 
-model =tf.keras.models.load_model('/Users/ahmed/Desktop/Python /my_model (1).h5')
+model =tf.keras.models.load_model('croper/my_model (1).h5')
 
 scaler = StandardScaler()
 encoder = LabelEncoder()
-
-with open("/Users/ahmed/Desktop/Python /html & css/style.css", "r") as file:
-    css = file.read()
 
 st.image("/Users/ahmed/Desktop/Python /Images/pal-01.png",width=100)
 st.title('GeziraPal Crop :blue[Recommender]', ':sunglasses:') 
