@@ -12,3 +12,4 @@ Contributing to our project is easy! Follow these steps to get started:
 
    ```bash
    git clone https://github.com/your-username/Tesnor-Flow-SC-Fertilizer-and-Crop-Recommendation-Recomm.git
+you can check the current issues so you can start with something 
