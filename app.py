@@ -43,14 +43,14 @@ fertilizer_options = ['Urea', 'DAP', 'MOP', '10:26:26 NPK', 'SSP', 'Magnesium Su
                       '20:20:20 NPK', 'Ammonium Sulphate', 'Ferrous Sulphate',
                       'White Potash', '10:10:10 NPK', 'Hydrated Lime']
 
-district_basic = st.selectbox('Select your district (Basic Recommender)', district_options)
-fertilizer_basic = st.selectbox("Enter fertilizer (Basic Recommender)", fertilizer_options)
-soil_basic = st.selectbox("Your soil color (Basic Recommender)", soil_color_options)
+district_basic = st.selectbox('Select your district', district_options)
+fertilizer_basic = st.selectbox("Enter fertilizer ", fertilizer_options)
+soil_basic = st.selectbox("Your soil color ", soil_color_options)
 
-if st.button("Predict Possible Crops (Basic Recommender)"):
+if st.button("Predict Possible Crops"):
     crop = predict_possible_crops(district_basic, fertilizer_basic, soil_basic)
     st.success(f'Recommended Crop: {crop}')
-st.header('AI recommender')
+st.header('Advanced AI recommender')
 
 district = st.selectbox('Select your district', district_options)
 soil_color = st.selectbox('Select soil color', soil_color_options)
