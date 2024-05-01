@@ -74,7 +74,7 @@ st.button("Recommend Possible Crops Basic Recommender")
 
 if len(crop) >= 1:
     st.success(f'Recommended Crop: {crop}')
-elif len(crop) == 0:
+elif len(crop) == "('Possible crops:', [])":
     st.warning("No recommendation available based on current selections. Try different combinations of district, fertilizer, and soil type.")
 
 st.header('AI recommender')
