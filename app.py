@@ -72,7 +72,7 @@ soil_basic = st.selectbox("Your soil color ", soil_color_options)
 
 crop = predict_possible_crops(district_basic, fertilizer_basic, soil_basic)
 
-if st.button("Recommend Possible Crops Basic Recommender")
+if st.button("Recommend Possible Crops Basic Recommender"):
     if len(crop[1]) >= 1:
         st.success(f'Recommended Crop: {crop}')
     else:
