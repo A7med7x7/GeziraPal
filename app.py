@@ -141,31 +141,20 @@ def predict(district, soil_color, nitrogen, phosphorus, potassium, ph, rainfall,
     try:
 
         encoded_district = district_to_encoded.get(district, -1) 
-
-       
         if encoded_district == -1:
             return "Invalid district", None
-
-
         encoded_soil_color = soil_color_to_encoded.get(soil_color, -1)  
-
-        
         if encoded_soil_color == -1:
             return "Invalid soil color", None
-            
         features = [[encoded_district, encoded_soil_color, nitrogen, phosphorus, potassium, ph, rainfall, temperature]]
         scaled_features = scaler.transform(features)
-
-
         prediction = model.predict(scaled_features)
         predicted_class_index = np.argmax(prediction)
-
         predicted_crop = decode_label(predicted_class_index)
         return predicted_crop
     except Exception as e:
         print(f"Error: {e}")
         return "Error occurred during prediction", None
-
 
 if st.button('Predict'):
     result = predict(district, soil_color, nitrogen, phosphorus, potassium, ph, rainfall, temperature)
@@ -202,12 +191,8 @@ def corresponding_youtube_tutorial(district, soil_color, nitrogen, phosphorus, p
             predicted_label = next(key for key, value in encoded_to_label.items() if value == predicted_crop)
         else:
             return "Invalid crop prediction", None
-            
         link = dataset.loc[dataset['Crop'] == predicted_label, 'Link'].values[0]
-
-        
         return predicted_crop, link
-
     except Exception as e:
         print(f"Error: {e}")
         return "Error occurred during prediction", None
