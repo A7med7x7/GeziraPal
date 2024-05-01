@@ -15,10 +15,30 @@ st.image("croper/Images/pal-01.png",width=100)
 st.title('GeziraPal Crop Recommender') 
 st.header('About us')
 
-st.markdown('''
-    Welcome to our innovative tool portal, showcasing a cutting-edge demo of a crop recommender system designed to assist you in predicting the optimal crop for cultivation. Our dedicated team, comprising [Reem Khogaly](www.facebook.com), Asmaa Farouq, Maab Jafar, and Ahmed Alghali, has poured their expertise and passion into creating this platform for your benefit. We invite you to explore, learn, and have fun!
- .''')
+import streamlit as st
 
+# Team member information (including LinkedIn URLs)
+team_members = [
+    {"name": "Reem Khogaly", "linkedin_url": "https://www.linkedin.com/in/reem-khogaly/"},
+    {"name": "Asmaa Farouq", "linkedin_url": "https://www.linkedin.com/in/asmaa-farouq/"},
+    {"name": "Maab Jafar", "linkedin_url": "https://www.linkedin.com/in/maab-jafar/"},
+    {"name": "Ahmed Alghali", "linkedin_url": "https://www.linkedin.com/in/ahmed-alghali/"}
+]
+
+
+content = """
+Welcome to our innovative tool portal, showcasing a cutting-edge demo of a crop recommender system designed to assist you in predicting the optimal crop for cultivation. Our dedicated team, comprising:
+
+"""
+
+for member in team_members:
+    content += f"- [{member['name']}]({member['linkedin_url']})\n"  # Use f-string for formatting
+
+content += """
+has poured their expertise and passion into creating this platform for your benefit. We invite you to explore, learn, and have fun!
+"""
+
+st.markdown(content)
 
 
 st.write("This app predicts possible crops based on district, fertilizer, and soil.")
