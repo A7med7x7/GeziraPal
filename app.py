@@ -72,12 +72,12 @@ soil_basic = st.selectbox("Your soil color ", soil_color_options)
 
 crop = predict_possible_crops(district_basic, fertilizer_basic, soil_basic)
 
+if st.button("Recommend Possible Crops Basic Recommender")
+    if len(crop[1]) >= 1:
+        st.success(f'Recommended Crop: {crop}')
+    else:
+        st.warning("No recommendation available based on current selections. Try different combinations of district, fertilizer, and soil type.")
 
-if len(crop[1]) >= 1:
-    st.success(f'Recommended Crop: {crop}')
-else:
-    st.warning("No recommendation available based on current selections. Try different combinations of district, fertilizer, and soil type.")
-st.button("Recommend Possible Crops Basic Recommender")
 
 st.header('AI recommender')
 
@@ -198,7 +198,6 @@ def corresponding_youtube_tutorial(district, soil_color, nitrogen, phosphorus, p
         if predicted_crop == "Invalid district" or predicted_crop == "Invalid soil color":
             return predicted_crop, None
 
-        # Check if the predicted crop is in the encoded_to_label dictionary
         if predicted_crop in encoded_to_label.values():
             predicted_label = next(key for key, value in encoded_to_label.items() if value == predicted_crop)
         else:
@@ -213,11 +212,9 @@ def corresponding_youtube_tutorial(district, soil_color, nitrogen, phosphorus, p
         print(f"Error: {e}")
         return "Error occurred during prediction", None
 
-# Button to trigger recommendation
 if st.button("Recommend YouTube Tutorial"):
     predicted_crop, tutorial_link = corresponding_youtube_tutorial(district, soil_color, nitrogen, phosphorus, potassium, ph, rainfall, temperature)
     if tutorial_link:
-        #st.success(f"Recommended Crop: {predicted_crop}")
         st.markdown(f"Here is the recommended tutorial: [{predicted_crop} Tutorial]({tutorial_link})")
     else:
         st.error("Error: No tutorial found for the recommended crop.")
