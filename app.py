@@ -19,10 +19,10 @@ import streamlit as st
 
 # Team member information (including LinkedIn URLs)
 team_members = [
-    {"name": "Reem Khogaly", "linkedin_url": "https://www.linkedin.com/in/reem-khogaly/"},
-    {"name": "Asmaa Farouq", "linkedin_url": "https://www.linkedin.com/in/asmaa-farouq/"},
-    {"name": "Maab Jafar", "linkedin_url": "https://www.linkedin.com/in/maab-jafar/"},
-    {"name": "Ahmed Alghali", "linkedin_url": "https://www.linkedin.com/in/ahmed-alghali/"}
+    {"name": "Reem Khogaly", "linkedin_url": "https://www.linkedin.com/in/reem-m-khogaly-730a391a8/"},
+    {"name": "Asmaa Farouq", "linkedin_url": "https://www.linkedin.com/in/asmaa-farouq-b41733264/"},
+    {"name": "Maab Jafar", "linkedin_url": "https://www.linkedin.com/in/maab-taha/"},
+    {"name": "Ahmed Alghali", "linkedin_url": "https://www.linkedin.com/in/ahmed-alghali-4997a5229/"}
 ]
 
 
@@ -32,7 +32,7 @@ Welcome to our innovative tool portal, showcasing a cutting-edge demo of a crop 
 """
 
 for member in team_members:
-    content += f"- [{member['name']}]({member['linkedin_url']})\n"  # Use f-string for formatting
+    content += f"- [{member['name']}]({member['linkedin_url']})\n" 
 
 content += """
 has poured their expertise and passion into creating this platform for your benefit. We invite you to explore, learn, and have fun!
@@ -41,7 +41,7 @@ has poured their expertise and passion into creating this platform for your bene
 st.markdown(content)
 
 
-st.write("This app predicts possible crops based on district, fertilizer, and soil.")
+st.write("This app recommed possible crops based on district, fertilizer, and soil using basic data filtering.")
 st.header('basic recommender')
 
 
@@ -63,13 +63,18 @@ fertilizer_options = ['Urea', 'DAP', 'MOP', '10:26:26 NPK', 'SSP', 'Magnesium Su
                       '20:20:20 NPK', 'Ammonium Sulphate', 'Ferrous Sulphate',
                       'White Potash', '10:10:10 NPK', 'Hydrated Lime']
 
-district_basic = st.selectbox('Select your district (Basic Recommender)', district_options)
-fertilizer_basic = st.selectbox("Enter fertilizer (Basic Recommender)", fertilizer_options)
-soil_basic = st.selectbox("Your soil color (Basic Recommender)", soil_color_options)
+district_basic = st.selectbox('Select your district ', district_options)
+fertilizer_basic = st.selectbox("Enter fertilizer ", fertilizer_options)
+soil_basic = st.selectbox("Your soil color ", soil_color_options)
 
-if st.button("Predict Possible Crops (Basic Recommender)"):
-    crop = predict_possible_crops(district_basic, fertilizer_basic, soil_basic)
-    st.success(f'Recommended Crop: {crop}')
+if st.button("Recommend Possible Crops (Basic Recommender)"):
+    def validaty1(crop):
+        crop = predict_possible_crops(district_basic, fertilizer_basic, soil_basic)
+        if crop: 
+            return (st.success(f'Recommended Crop: {crop}'))
+        else: 
+            return ("No recommendation available based on current selections. Try different combinations of district, fertilizer, and soil type.")
+
 st.header('AI recommender')
 
 district = st.selectbox('Select your district', district_options)
