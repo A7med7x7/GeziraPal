@@ -36,6 +36,8 @@ for member in team_members:
 
 content += """
 has poured their expertise and passion into creating this platform for your benefit. We invite you to explore, learn, and have fun!
+**Explore the Code on GitHub:** [Tesnor-Flow SC Fertilizer and Crop Recommendation Recomm](https://github.com/A7med7x7/Tesnor-Flow-SC-Fertilizer-and-Crop-Recommendation-Recomm)
+
 """
 
 st.markdown(content)
