@@ -67,13 +67,13 @@ district_basic = st.selectbox('Select your district ', district_options)
 fertilizer_basic = st.selectbox("Enter fertilizer ", fertilizer_options)
 soil_basic = st.selectbox("Your soil color ", soil_color_options)
 
-if st.button("Recommend Possible Crops (Basic Recommender)"):
-    def validaty1(crop):
-        crop = predict_possible_crops(district_basic, fertilizer_basic, soil_basic)
-        if crop: 
-            return (st.success(f'Recommended Crop: {crop}'))
-        else: 
-            return ("No recommendation available based on current selections. Try different combinations of district, fertilizer, and soil type.")
+st.button("Recommend Possible Crops (Basic Recommender)")
+def validaty1(crop):
+    crop = predict_possible_crops(district_basic, fertilizer_basic, soil_basic)
+    if len(crop) > 1: 
+        return (st.success(f'Recommended Crop: {crop}'))
+    else: 
+        return ("No recommendation available based on current selections. Try different combinations of district, fertilizer, and soil type.")
 
 st.header('AI recommender')
 
