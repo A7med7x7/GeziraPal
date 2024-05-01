@@ -73,8 +73,8 @@ crop = predict_possible_crops(district_basic, fertilizer_basic, soil_basic)
 st.button("Recommend Possible Crops Basic Recommender")
 
 if len(crop) >= 13:
-    st.success(f'Possible Crops: {", ".join(crop)}')  
-else:
+    st.success(f'Recommended Crop: {crop}')
+elif len(crop) == 0:
     st.warning("No recommendation available based on current selections. Try different combinations of district, fertilizer, and soil type.")
 
 st.header('AI recommender')
