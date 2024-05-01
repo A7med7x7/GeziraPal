@@ -16,7 +16,7 @@ st.title('GeziraPal Crop Recommender')
 st.header('About us')
 
 st.markdown('''
-    Welcome to our innovative tool here portal, showcasing a cutting-edge demo of a crop recommender system designed to assist you in predicting the optimal crop for cultivation. Our dedicated team, comprising Reem Khogaly, Asmaa Farouq, Maab Jafar, and Ahmed Alghali, has poured their expertise and passion into creating this platform for your benefit. We invite you to explore, learn, and have fun!
+    Welcome to our innovative tool portal, showcasing a cutting-edge demo of a crop recommender system designed to assist you in predicting the optimal crop for cultivation. Our dedicated team, comprising [Reem Khogaly](www.facebook.com), Asmaa Farouq, Maab Jafar, and Ahmed Alghali, has poured their expertise and passion into creating this platform for your benefit. We invite you to explore, learn, and have fun!
  .''')
 
 
