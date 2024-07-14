@@ -174,7 +174,7 @@ def corresponding_youtube_tutorial(district, soil_color, nitrogen, phosphorus, p
         if predicted_crop == "Invalid district" or predicted_crop == "Invalid soil color":
             return predicted_crop, None
 
-        # Check if the predicted crop is in the encoded_to_label dictionary
+
         if predicted_crop in encoded_to_label.values():
             predicted_label = next(key for key, value in encoded_to_label.items() if value == predicted_crop)
         else:
@@ -189,7 +189,7 @@ def corresponding_youtube_tutorial(district, soil_color, nitrogen, phosphorus, p
         print(f"Error: {e}")
         return "Error occurred during prediction", None
 
-# Button to trigger recommendation
+
 if st.button("Recommend YouTube Tutorial"):
     predicted_crop, tutorial_link = corresponding_youtube_tutorial(district, soil_color, nitrogen, phosphorus, potassium, ph, rainfall, temperature)
     if tutorial_link:
