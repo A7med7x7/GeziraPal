@@ -5,7 +5,7 @@ import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import pickle
 
-model =tf.keras.models.load_model('croper/my_model.h5')
+model =tf.keras.models.load_model('models/my_model.h5')
 
 scaler = StandardScaler()
 encoder = LabelEncoder()
@@ -47,7 +47,7 @@ st.write("This app recommed possible crops based on district, fertilizer, and so
 st.header('basic recommender')
 
 
-dataset=pd.read_csv('croper/my_data/crop_and_fertilizer.csv')
+dataset=pd.read_csv('data/crop_and_fertilizer.csv') #set to change 
 
 
 def predict_possible_crops(district, fertilizer, soil):

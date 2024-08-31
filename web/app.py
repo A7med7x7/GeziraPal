@@ -28,8 +28,7 @@ st.write("This app predicts possible crops based on district, fertilizer, and so
 st.divider()
 st.header('basic recommender')
 
-
-dataset=pd.read_csv('/Users/ahmed/Desktop/Python /my_data/crop_and_fertilizer.csv')
+dataset=pd.read_csv('data/crop_and_fertilizer.csv')
 
 
 def predict_possible_crops(district, fertilizer, soil):
