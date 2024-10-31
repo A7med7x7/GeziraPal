@@ -11,7 +11,7 @@ scaler = StandardScaler()
 encoder = LabelEncoder()
 
 
-st.image("croper/Images/pal-01.png",width=100)
+st.image("/workspaces/GeziraPal/web/assets/Images/pal-01.png",width=100)
 st.title('GeziraPal Crop Recommender') 
 st.header('About us')
 
@@ -47,7 +47,7 @@ st.write("This app recommed possible crops based on district, fertilizer, and so
 st.header('basic recommender')
 
 
-dataset=pd.read_csv('data/crop_and_fertilizer.csv') #set to change 
+dataset=pd.read_csv('Data/crop_and_fertilizer.csv') #set to change 
 
 
 def predict_possible_crops(district, fertilizer, soil):
