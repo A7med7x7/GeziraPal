@@ -6,9 +6,14 @@ scikit-learn==0.24.2
 streamlit==1.7.0
 python-dateutil>=2.7.3
 pytz>=2017.3
+streamlit
 ml-dtypes~=0.2.0
 packaging
+typing-extensions
+pygments
 wrapt<1.15,>=1.11.0
+markdown-it-py
+rich
 protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3
 grpcio<2.0,>=1.24.3
 tensorflow-io-gcs-filesystem>=0.23.1
