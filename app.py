@@ -11,7 +11,7 @@ scaler = StandardScaler()
 encoder = LabelEncoder()
 
 
-st.image("../web/assets/images/pal-01.png",width=100)
+st.image("../web/assets/Images/pal-01.png",width=100)
 st.title('GeziraPal Crop Recommender') 
 st.header('About us')
 
