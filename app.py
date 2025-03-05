@@ -45,7 +45,7 @@ st.write("This app recommed possible crops based on district, fertilizer, and so
 st.header('basic recommender')
 
 
-dataset=pd.read_csv('Data/crop_and_fertilizer.csv') #set to change 
+dataset=pd.read_csv('data/crop_and_fertilizer.csv') #set to change 
 
 
 def predict_possible_crops(district, fertilizer, soil):

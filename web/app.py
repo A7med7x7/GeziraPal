@@ -5,12 +5,12 @@ import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import pickle
 
-model =tf.keras.models.load_model('croper/my_model (1).h5')
+model =tf.keras.models.load_model('../models/my_model.h5')
 
 scaler = StandardScaler()
 encoder = LabelEncoder()
 
-st.image("/Users/ahmed/Desktop/Python /Images/pal-01.png",width=100)
+st.image("../Images/pal-01.png",width=100)
 st.title('GeziraPal Crop :blue[Recommender]', ':sunglasses:') 
 st.header('About us', divider='rainbow')
 
@@ -28,7 +28,7 @@ st.write("This app predicts possible crops based on district, fertilizer, and so
 st.divider()
 st.header('basic recommender')
 
-dataset=pd.read_csv('data/crop_and_fertilizer.csv')
+dataset=pd.read_csv('../data/crop_and_fertilizer.csv')
 
 
 def predict_possible_crops(district, fertilizer, soil):
