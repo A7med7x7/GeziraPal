@@ -15,8 +15,6 @@ st.image("/workspaces/GeziraPal/web/assets/Images/pal-01.png",width=100)
 st.title('GeziraPal Crop Recommender') 
 st.header('About us')
 
-import streamlit as st
-
 # Team member information (including LinkedIn URLs)
 team_members = [
     {"name": "Reem Khogaly", "linkedin_url": "https://www.linkedin.com/in/reem-m-khogaly-730a391a8/"},
@@ -27,7 +25,7 @@ team_members = [
 
 
 content = """
-Welcome to our innovative tool portal, showcasing a cutting-edge demo of a crop recommender system designed to assist you in predicting the optimal crop for cultivation. Our dedicated team, comprising:
+Welcome to our innovative tool portal, showcasing a cutting-edge demo of a crop recommender system designed to assist you in predicting the  crop for cultivation. Our dedicated team, comprising:
 
 """
 
