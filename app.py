@@ -6,12 +6,12 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 import pickle
 
 model =tf.keras.models.load_model('models/my_model.h5')
-
+import os
 scaler = StandardScaler()
 encoder = LabelEncoder()
 
 
-st.image("GeziraPal/web/assets/Images/pal-01.png",width=100)
+st.image(os.path.abspath("web/assets/Images/pal-01.png"), width=100)
 st.title('GeziraPal Crop Recommender') 
 st.header('About us')
 
