@@ -84,7 +84,7 @@ ipython_config.py
 # VSCode 
 #/Users/ahmed/Downloads/computerscience/GeziraPal/data/Crop and fertilizer dataset.csv
 .vscode
-
+/workspaces/GeziraPal/.vscode/workspaces/GeziraPal/.vscode
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
