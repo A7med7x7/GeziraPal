@@ -1,19 +1,26 @@
 
+![Streamlit Version](https://img.shields.io/badge/python-3.9%20%7C%203.10.16-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white&style=for-the-badge)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white&style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-deployed-brightgreen?style=for-the-badge)
+  ![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
+
 ![salah-1](https://github.com/A7med7x7/Tesnor-Flow-SC-Fertilizer-and-Crop-Recommendation-Recomm/assets/95593096/da0fc393-61ab-43b0-9bc6-060f6b9386fd)
-![Python Version](https://img.shields.io/badge/python-3.9%20%7C%203.10-blue)
-# Tesnor-Flow-SC-Fertilizer-and-Crop-Recommendation-system 
-GeziraPal is a project that aimed at assisting individuals with knowledge sharing in agriculture & crop cultivation. The project utilizes TensorFlow, a popular machine learning framework, to develop a recommendation systems for suggesting suitable crops to cultivate based on various factors and many different models. so far deployed in Streamlit. 
-you know more about it watching this demo [video](https://www.youtube.com/watch?v=j5zQ6_LuIZo&t=5s&pp=ygUJZ2V6aXJhcGFs)
+
+# Tesnor-Flow-Fertilizer-and-Crop-Recommendation-system 
+GeziraPal is a project that aims at assisting individuals with knowledge sharing in agriculture & crop cultivation. The project utilizes TensorFlow, a popular machine learning framework, to develop a recommendation systems for suggesting suitable crops to cultivate based on various factors (atomeshperic parameters and soil readings). so far deployed in Streamlit. 
+ watching this demo [video](https://www.youtube.com/watch?v=j5zQ6_LuIZo&t=5s&pp=ygUJZ2V6aXJhcGFs) for more information.
 
 
-### How to Use the Code
+## How to Use the Code
 
 #### Loading and Installing Dependencies
 
-Before running the application, ensure you have installed the necessary dependencies. You can find all the required dependencies along with their corresponding versions in the `requirements.txt` file. 
+Before running the application, ensure you have installed the necessary dependencies. You can find all the required dependencies along with their corresponding versions in the `requirements.txt` file. we recommend using github virtual enviroment 
+using the command `pip install -r requirements.txt` you can install all the software dependcies at once
+
 
 ```bash 
-pip install -r requirements.txt
 import numpy as np
 import pandas as pd
 import joblib
@@ -24,40 +31,34 @@ import tensorflow.keras as keras
 import streamlit as st
 ```
 
-### To use GeziraPal, follow these steps:
+### To use GeziraPal locally, follow these steps:
 
 1/ Clone the repository to your local machine using the following command:
 
-git clone https://github.com/your-username/Tesnor-Flow-SC-Fertilizer-and-Crop-Recommendation-Recomm.git
+`git clone https://github.com/A7med7x7/GeziraPal.git`
 
 2/ Install the necessary dependencies listed in the requirements.txt file using:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt
+`
 
 3/ Run the Streamlit web application by executing:
 
-streamlit run app.py
+`streamlit run app.py
+`
+through bash/zsh CLI
 
-4/ Access the web interface by opening a browser and navigating to the provided URL.
-
-5/ Choose between the Basic Recommender and AI Recommender options based on your preference.
-
-6/ Input the relevant parameters such as district, soil color, nutrient levels, and weather conditions.
-
-7/ Click the "Predict" button to receive crop recommendations.
-
-8/ Optionally, explore the provided YouTube tutorial recommendations for further learning.
+4/ you're ready to go! 
 
 ### Usage Details
 NumPy & Pandas: Use these libraries for numerical computations and data manipulation within your code.
-Joblib: Use it as an alternative for loading transformers, encoders, and scalers saved during preprocessing or model training.
-Sci-kit learn: Utilize this library for machine learning algorithms and additional functionalities.
-TensorFlow: Employ TensorFlow for machine learning model development and deployment.
-TensorFlow.keras: Specifically used for loading models created with Keras.
+Joblib: Use it as an alternative for loading models, encoders, and scalers saved during preprocessing and model training.
+Scikit learn: is used for machine learning algorithms but mainly used for scoring the models from metrics class.
+TensorFlow: for machine learning model development / NN architecture.
 Streamlit: Utilized for streamlining the web application development process.
 
 
-### About the Data
+## About the Data
 
 #### Source
 The dataset was originally obtained from Kaggle: [Crop and Fertilizer Dataset for Western Maharashtra](https://www.kaggle.com/datasets/sanchitagholap/crop-and-fertilizer-dataset-for-westernmaharashtra).
@@ -100,4 +101,3 @@ The app contains 3 prediction functions:
 
 3. **Corresponding YouTube Tutorial Function**:
    - This function returns the predicted label, converts it, and then searches in the corresponding YouTube tutorial from the 'link' column to suggest what to watch.
-

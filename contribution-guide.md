@@ -11,5 +11,5 @@ Contributing to our project is easy! Follow these steps to get started:
 2. **Clone the Repository**: Clone the forked repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/your-username/Tesnor-Flow-SC-Fertilizer-and-Crop-Recommendation-Recomm.git
+   git clone https://github.com/A7med7x7/GeziraPal.git
 you can check the current issues so you can start with something 
