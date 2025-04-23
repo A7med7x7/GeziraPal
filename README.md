@@ -7,7 +7,7 @@
 
 ![salah-1](https://github.com/A7med7x7/Tesnor-Flow-SC-Fertilizer-and-Crop-Recommendation-Recomm/assets/95593096/da0fc393-61ab-43b0-9bc6-060f6b9386fd)
 
-# Tesnor-Flow-Fertilizer-and-Crop-Recommendation-system 
+# TesnorFlow Fertilizer and Crop Recommendation system 
 GeziraPal is a project that aims at assisting individuals with knowledge sharing in agriculture & crop cultivation. The project utilizes TensorFlow, a popular machine learning framework, to develop a recommendation systems for suggesting suitable crops to cultivate based on various factors (atomeshperic parameters and soil readings). so far deployed in Streamlit. 
  watching this demo [video](https://www.youtube.com/watch?v=j5zQ6_LuIZo&t=5s&pp=ygUJZ2V6aXJhcGFs) for more information.
 
