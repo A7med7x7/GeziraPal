@@ -42,7 +42,7 @@ import streamlit as st
 `pip install -r requirements.txt
 `
 
-![installtion](../GeziraPal/app/readme-assets/gezirapal.png)
+![installtion](app/readme-assets/gezirapal.png)
 
 3/ Run the Streamlit web application by executing:
 
